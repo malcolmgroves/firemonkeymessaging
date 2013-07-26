@@ -1,0 +1,120 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'Form11'
+  ClientHeight = 358
+  ClientWidth = 613
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object GroupBox1: TGroupBox
+    Align = alTop
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 65.000000000000000000
+    Text = 'Publisher'
+    Width = 613.000000000000000000
+    TabOrder = 0
+    object Edit1: TEdit
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Width = 502.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Button2: TButton
+      Anchors = [akTop, akRight]
+      Height = 22.000000000000000000
+      Position.X = 522.674987792968800000
+      Position.Y = 23.000000000000000000
+      TabOrder = 1
+      Text = 'Send'
+      Width = 80.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object GroupBox2: TGroupBox
+    Align = alLeft
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 293.000000000000000000
+    Position.Y = 65.000000000000000000
+    Text = 'Publisher \ Subscriber'
+    Width = 305.000000000000000000
+    TabOrder = 1
+    object Button1: TButton
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 0
+      Text = 'Subscribe'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+    object ListBox1: TListBox
+      Anchors = [akLeft, akTop, akBottom]
+      Height = 222.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 56.000000000000000000
+      TabOrder = 1
+      Width = 273.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBox1Change
+    end
+    object Button3: TButton
+      Height = 22.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 2
+      Text = 'Unsubscribe'
+      Width = 80.000000000000000000
+      OnClick = Button3Click
+    end
+  end
+  object GroupBox3: TGroupBox
+    Align = alClient
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 293.000000000000000000
+    Text = 'Subscriber'
+    Width = 308.000000000000000000
+    TabOrder = 2
+    object Button4: TButton
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 0
+      Text = 'Subscribe'
+      Width = 80.000000000000000000
+      OnClick = Button4Click
+    end
+    object Button5: TButton
+      Height = 22.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Text = 'Unsubscribe'
+      Width = 80.000000000000000000
+      OnClick = Button5Click
+    end
+    object ListBox2: TListBox
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Height = 222.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 56.000000000000000000
+      TabOrder = 2
+      Width = 278.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+    end
+  end
+end
